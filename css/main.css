@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    color: white;
+}
+
+#download, #main, #loading {
+    display: none;
+}
+
+#loading.active {
+    display: inline;
+}
+
+#open {
+    padding: 5px;
+    border-radius: 5px;
+}
+
