@@ -11,13 +11,13 @@ function onload() {
     img.addEventListener('load', imageLoad);
 }
 
-function click() {
-    const files = dialog.showOpenDialog({
+async function click() {
+    const files = await dialog.showOpenDialog({
         filters: [{ name: 'RPG Maker sprites', extensions: ['png'] }]
     });
     loading.classList.add('active');
-    if(files) {
-        const name = files[0];
+    if (files && files.filePaths && files.filePaths[0]) {
+        const name = files.filePaths[0];
         img.src = `file://${name}`;
         download.download = `${name.split('/').pop().slice(0, -4)}.gif`;
     }

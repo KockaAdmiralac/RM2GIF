@@ -1,12 +1,12 @@
 {
     "name": "rm2gif",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Converts RPG Maker XP sprites to GIFs",
     "homepage": "https://github.com/KockaAdmiralac/RM2GIF",
     "author": {
         "name": "KockaAdmiralac",
-        "email": "1405223@gmail.com",
-        "url": "https://github.com/KockaAdmiralac"
+        "email": "git@kocka.tech",
+        "url": "https://kocka.tech"
     },
     "main": "main.js",
     "scripts": {
@@ -21,7 +21,6 @@
     },
     "license": "CC-BY-SA-4.0",
     "devDependencies": {
-        "electron": "^1.2.0"
+        "electron": ">=7.1.10"
     }
 }
-

@@ -3,7 +3,13 @@ const {app, BrowserWindow} = require('electron');
 let mainWindow;
 
 function createWindow () {
-    mainWindow = new BrowserWindow({width: 1200, height: 900});
+    mainWindow = new BrowserWindow({
+        height: 900,
+        webPreferences: {
+            nodeIntegration: true
+        },
+        width: 1200
+    });
     mainWindow.maximize();
     mainWindow.loadURL(`file://${__dirname}/index.html`);
     mainWindow.on('closed', function() {
